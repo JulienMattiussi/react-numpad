@@ -80,7 +80,7 @@ var Wrapper = _styledComponents["default"].div(_templateObject(), function (prop
 var Backspace = (0, _styledComponents["default"])(_ui["default"])(_templateObject2(), function (props) {
   return props.theme.subHeader.primaryColor;
 }, function (props) {
-  return props.value ? 'visible' : props.theme.subHeader.emptyVisibility;
+  return props.value.length ? 'visible' : props.theme.subHeader.emptyVisibility;
 });
 
 var Input = _styledComponents["default"].input(_templateObject3());
