@@ -34,7 +34,7 @@ var _default = {
   global: {
     fontFamily: 'Roboto, Helvetica Neue, Arial, sans-serif, Helvetica',
     flexDirection: 'column',
-    buttonSize: '1.5em'
+    buttonSize: '1em'
   }
 };
 exports["default"] = _default;

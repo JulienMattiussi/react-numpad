@@ -53,8 +53,28 @@ function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.
 
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
-function _templateObject5() {
+function _templateObject7() {
   var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-wrap: wrap;\n  flex-grow: 1;\n  background: ", ";\n  button {\n    border-bottom: 1px solid #ddd;\n    border-right: 1px solid #ddd;\n  }\n  button:nth-child(3n) {\n    border-right: none;\n  }\n  button:nth-child(-n + 3) {\n    border-top: 1px solid #ddd;\n  }\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: space-between;\n  padding: ", " ", "\n    ", " ", ";\n  align-items: center;\n  color: ", ";\n  background: ", ";\n  user-select: none;\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n  overflow: hidden;\n  font-size: 1.3em;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -64,7 +84,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: space-between;\n  padding: ", " ", "\n    ", " ", ";\n  align-items: center;\n  color: ", ";\n  background: ", ";\n  user-select: none;\n"]);
+  var data = _taggedTemplateLiteral(["\n  height: ", ";\n  width: ", ";\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -74,7 +94,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  overflow: hidden;\n  font-size: 1.3em;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n"]);
+  var data = _taggedTemplateLiteral(["\n  height: ", ";\n  width: ", ";\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -112,11 +132,21 @@ var Content = (0, _styledComponents["default"])(_Paper["default"])(_templateObje
 }, function (props) {
   return props.theme.body.backgroundColor;
 });
+var IconCheckStyled = (0, _styledComponents["default"])(_CheckSharp["default"])(_templateObject3(), function (props) {
+  return props.theme.global.buttonSize;
+}, function (props) {
+  return props.theme.global.buttonSize;
+});
+var IconCloseStyled = (0, _styledComponents["default"])(_CloseSharp["default"])(_templateObject4(), function (props) {
+  return props.theme.global.buttonSize;
+}, function (props) {
+  return props.theme.global.buttonSize;
+});
 
-var Label = _styledComponents["default"].div(_templateObject3()); // TODO use material-ui colors
+var Label = _styledComponents["default"].div(_templateObject5()); // TODO use material-ui colors
 
 
-var Header = _styledComponents["default"].div(_templateObject4(), function (props) {
+var Header = _styledComponents["default"].div(_templateObject6(), function (props) {
   return props.theme.header.paddingTop;
 }, function (props) {
   return props.theme.header.paddingRight;
@@ -130,7 +160,7 @@ var Header = _styledComponents["default"].div(_templateObject4(), function (prop
   return props.theme.header.backgroundColor;
 });
 
-var Keys = _styledComponents["default"].div(_templateObject5(), function (props) {
+var Keys = _styledComponents["default"].div(_templateObject7(), function (props) {
   return props.theme.header.secondaryColor;
 });
 
@@ -218,20 +248,14 @@ var KeyPad = (0, _react.forwardRef)(function KeyPad(_ref, ref) {
     position: position,
     ref: ref,
     square: true
-  }, _react["default"].createElement(Header, null, _react["default"].createElement(_ui["default"], null, _react["default"].createElement(_CloseSharp["default"], {
-    onClick: cancel,
-    style: {
-      height: "".concat(function (props) {
-        return props.theme.global.buttonSize;
-      }),
-      width: '1.5em'
-    }
+  }, _react["default"].createElement(Header, null, _react["default"].createElement(_ui["default"], null, _react["default"].createElement(IconCloseStyled, {
+    onClick: cancel
   })), _react["default"].createElement(Label, null, label), _react["default"].createElement(_ui["default"], {
     onClick: function onClick() {
       return confirm(inputValue);
     },
     disabled: !validation(inputValue)
-  }, _react["default"].createElement(_CheckSharp["default"], null))), _react["default"].createElement(_Display["default"], {
+  }, _react["default"].createElement(IconCheckStyled, null))), _react["default"].createElement(_Display["default"], {
     value: displayRule(inputValue),
     backspace: function backspace() {
       return keyboard.virtualInteraction('Backspace');
