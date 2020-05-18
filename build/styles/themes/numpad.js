@@ -19,7 +19,7 @@ var _default = {
   },
   subHeader: {
     primaryColor: '#263238',
-    emptyColor: '#263238',
+    emptyVisibility: 'visible',
     backgroundColor: '#ECEFF1',
     paddingTop: '2px',
     paddingBottom: '5px',
