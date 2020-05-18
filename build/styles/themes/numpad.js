@@ -14,20 +14,25 @@ var _default = {
     paddingBottom: '2px',
     paddingLeft: '4px',
     paddingRight: '4px',
-    buttonSize: '1em'
+    buttonSize: '1em',
+    order: 1
   },
   subHeader: {
     primaryColor: '#263238',
+    emptyColor: '#263238',
+    backgroundColor: '#ECEFF1',
     paddingTop: '2px',
     paddingBottom: '5px',
     paddingLeft: '8px',
-    paddingRight: '5px'
+    paddingRight: '5px',
+    order: 2
   },
   body: {
     primaryColor: '#263238',
     secondaryColor: '#32a5f2',
     highlightColor: '#FFC107',
-    backgroundColor: '#ECEFF1'
+    backgroundColor: '#ECEFF1',
+    order: 3
   },
   panel: {
     backgroundColor: '#CFD8DC'

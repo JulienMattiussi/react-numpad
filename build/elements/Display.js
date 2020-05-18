@@ -52,7 +52,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  padding: ", "\n    ", " ", "\n    ", ";\n  align-items: center;\n  border: none;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  padding: ", "\n    ", " ", "\n    ", ";\n  align-items: center;\n  border: none;\n  background-color: ", ";\n  order: ", ";\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -71,10 +71,14 @@ var Wrapper = _styledComponents["default"].div(_templateObject(), function (prop
   return props.theme.subHeader.paddingBottom;
 }, function (props) {
   return props.theme.subHeader.paddingLeft;
+}, function (props) {
+  return props.theme.subHeader.backgroundColor;
+}, function (props) {
+  return props.theme.subHeader.order;
 });
 
 var Backspace = (0, _styledComponents["default"])(_ui["default"])(_templateObject2(), function (props) {
-  return props.theme.subHeader.primaryColor;
+  return props.value != null ? props.theme.subHeader.primaryColor : props.theme.subHeader.emptyColor;
 });
 
 var Input = _styledComponents["default"].input(_templateObject3());

@@ -54,7 +54,7 @@ function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
 function _templateObject7() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-wrap: wrap;\n  flex-grow: 1;\n  background: ", ";\n  button {\n    border-bottom: 1px solid #ddd;\n    border-right: 1px solid #ddd;\n  }\n  button:nth-child(3n) {\n    border-right: none;\n  }\n  button:nth-child(-n + 3) {\n    border-top: 1px solid #ddd;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-wrap: wrap;\n  flex-grow: 1;\n  background: ", ";\n  button {\n    border-bottom: 1px solid #ddd;\n    border-right: 1px solid #ddd;\n  }\n  button:nth-child(3n) {\n    border-right: none;\n  }\n  button:nth-child(-n + 3) {\n    border-top: 1px solid #ddd;\n  }\n  order: ", ";\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -64,7 +64,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: space-between;\n  padding: ", " ", "\n    ", " ", ";\n  align-items: center;\n  color: ", ";\n  background: ", ";\n  user-select: none;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: space-between;\n  padding: ", " ", "\n    ", " ", ";\n  align-items: center;\n  color: ", ";\n  background: ", ";\n  user-select: none;\n  order: ", ";\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -158,10 +158,14 @@ var Header = _styledComponents["default"].div(_templateObject6(), function (prop
   return props.theme.header.primaryColor;
 }, function (props) {
   return props.theme.header.backgroundColor;
+}, function (props) {
+  return props.theme.body.order;
 });
 
 var Keys = _styledComponents["default"].div(_templateObject7(), function (props) {
   return props.theme.header.secondaryColor;
+}, function (props) {
+  return props.theme.body.order;
 });
 
 var KeyPad = (0, _react.forwardRef)(function KeyPad(_ref, ref) {
