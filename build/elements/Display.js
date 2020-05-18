@@ -78,6 +78,7 @@ var Wrapper = _styledComponents["default"].div(_templateObject(), function (prop
 });
 
 var Backspace = (0, _styledComponents["default"])(_ui["default"])(_templateObject2(), function (props) {
+  console.log('props', props);
   return props.value != null ? props.theme.subHeader.primaryColor : props.theme.subHeader.emptyColor;
 });
 

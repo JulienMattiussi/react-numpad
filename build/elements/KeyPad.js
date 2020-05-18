@@ -159,7 +159,7 @@ var Header = _styledComponents["default"].div(_templateObject6(), function (prop
 }, function (props) {
   return props.theme.header.backgroundColor;
 }, function (props) {
-  return props.theme.body.order;
+  return props.theme.header.order;
 });
 
 var Keys = _styledComponents["default"].div(_templateObject7(), function (props) {
