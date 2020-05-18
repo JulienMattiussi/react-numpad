@@ -52,7 +52,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  padding: 2px 5px 5px 8px;\n  align-items: center;\n  border: none;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  padding: ", "\n    ", " ", "\n    ", ";\n  align-items: center;\n  border: none;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -63,10 +63,18 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Wrapper = _styledComponents["default"].div(_templateObject());
+var Wrapper = _styledComponents["default"].div(_templateObject(), function (props) {
+  return props.theme.subHeader.paddingTop;
+}, function (props) {
+  return props.theme.subHeader.paddingRight;
+}, function (props) {
+  return props.theme.subHeader.paddingBottom;
+}, function (props) {
+  return props.theme.subHeader.paddingLeft;
+});
 
 var Backspace = (0, _styledComponents["default"])(_ui["default"])(_templateObject2(), function (props) {
-  return props.theme.header.primaryColor;
+  return props.theme.subHeader.primaryColor;
 });
 
 var Input = _styledComponents["default"].input(_templateObject3());

@@ -64,7 +64,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: space-between;\n  padding: ", "\n    ", ";\n  align-items: center;\n  color: ", ";\n  background: ", ";\n  user-select: none;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: space-between;\n  padding: ", " ", "\n    ", " ", ";\n  align-items: center;\n  color: ", ";\n  background: ", ";\n  user-select: none;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -117,9 +117,13 @@ var Label = _styledComponents["default"].div(_templateObject3()); // TODO use ma
 
 
 var Header = _styledComponents["default"].div(_templateObject4(), function (props) {
-  return props.theme.header.verticalPadding;
+  return props.theme.header.paddingTop;
 }, function (props) {
-  return props.theme.header.horizontalPadding;
+  return props.theme.header.paddingRight;
+}, function (props) {
+  return props.theme.header.paddingBottom;
+}, function (props) {
+  return props.theme.header.paddingLeft;
 }, function (props) {
   return props.theme.header.primaryColor;
 }, function (props) {
