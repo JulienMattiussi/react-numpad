@@ -64,7 +64,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: space-between;\n  padding: 2px 4px;\n  align-items: center;\n  color: white;\n  background: ", ";\n  user-select: none;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: space-between;\n  padding: ", "\n    ", ";\n  align-items: center;\n  color: ", ";\n  background: ", ";\n  user-select: none;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -94,7 +94,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  ", " \n  \n  ", "\n  \n  background: ", ";\n  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;  \n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: ", ";\n  ", "\n\n  ", "\n\n  background: ", ";\n  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -105,7 +105,9 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Content = (0, _styledComponents["default"])(_Paper["default"])(_templateObject(), _mediaTemplates.media.mobile(_templateObject2()), function (props) {
+var Content = (0, _styledComponents["default"])(_Paper["default"])(_templateObject(), function (props) {
+  return props.theme.global.flexDirection;
+}, _mediaTemplates.media.mobile(_templateObject2()), function (props) {
   return props.position === 'fullscreen' ? "\n  width: 100vw;\n  height: 100vh;\n  font-size: 1.2em;\n  " : "\n      width: 264px;\n    height: 300px;\n  ";
 }, function (props) {
   return props.theme.body.backgroundColor;
@@ -115,6 +117,12 @@ var Label = _styledComponents["default"].div(_templateObject3()); // TODO use ma
 
 
 var Header = _styledComponents["default"].div(_templateObject4(), function (props) {
+  return props.theme.header.verticalPadding;
+}, function (props) {
+  return props.theme.header.horizontalPadding;
+}, function (props) {
+  return props.theme.header.primaryColor;
+}, function (props) {
   return props.theme.header.backgroundColor;
 });
 

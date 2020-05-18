@@ -10,7 +10,9 @@ var _default = {
     secondaryColor: '#ECEFF1',
     color: 'red',
     highlightColor: '#FFC107',
-    backgroundColor: '#546E7A'
+    backgroundColor: '#546E7A',
+    verticalPadding: '2px',
+    horizontalPadding: '4px'
   },
   body: {
     primaryColor: '#263238',
@@ -22,7 +24,8 @@ var _default = {
     backgroundColor: '#CFD8DC'
   },
   global: {
-    fontFamily: 'Roboto, Helvetica Neue, Arial, sans-serif, Helvetica'
+    fontFamily: 'Roboto, Helvetica Neue, Arial, sans-serif, Helvetica',
+    flexDirection: 'column'
   }
 };
 exports["default"] = _default;
