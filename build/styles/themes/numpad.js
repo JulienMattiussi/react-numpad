@@ -33,7 +33,8 @@ var _default = {
   },
   global: {
     fontFamily: 'Roboto, Helvetica Neue, Arial, sans-serif, Helvetica',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    buttonSize: '1.5em'
   }
 };
 exports["default"] = _default;
