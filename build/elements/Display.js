@@ -97,7 +97,8 @@ var DisplayWrapper = function DisplayWrapper(_ref) {
     readOnly: true,
     autoFocus: true
   })), _react["default"].createElement(Backspace, _extends({}, backspaceLongPress, {
-    onClick: backspace
+    onClick: backspace,
+    value: value
   }), _react["default"].createElement(_BackspaceSharp["default"], null)));
 };
 
