@@ -219,7 +219,9 @@ var KeyPad = (0, _react.forwardRef)(function KeyPad(_ref, ref) {
     ref: ref,
     square: true
   }, _react["default"].createElement(Header, null, _react["default"].createElement(_ui["default"], null, _react["default"].createElement(_CloseSharp["default"], {
-    onClick: cancel
+    onClick: cancel,
+    height: "1.5em",
+    width: "1.5em"
   })), _react["default"].createElement(Label, null, label), _react["default"].createElement(_ui["default"], {
     onClick: function onClick() {
       return confirm(inputValue);
