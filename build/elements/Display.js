@@ -81,6 +81,8 @@ var Backspace = (0, _styledComponents["default"])(_ui["default"])(_templateObjec
   return props.theme.subHeader.primaryColor;
 }, function (props) {
   console.log(props.value);
+  console.log(props.value.length);
+  console.log(props.theme.subHeader.emptyVisibility);
   return props.value.length ? 'visible' : props.theme.subHeader.emptyVisibility;
 });
 
