@@ -133,14 +133,14 @@ var Content = (0, _styledComponents["default"])(_Paper["default"])(_templateObje
   return props.theme.body.backgroundColor;
 });
 var IconCheckStyled = (0, _styledComponents["default"])(_CheckSharp["default"])(_templateObject3(), function (props) {
-  return props.theme.global.buttonSize;
+  return "".concat(props.theme.header.buttonSize, " !important");
 }, function (props) {
-  return props.theme.global.buttonSize;
+  return "".concat(props.theme.header.buttonSize, " !important");
 });
 var IconCloseStyled = (0, _styledComponents["default"])(_CloseSharp["default"])(_templateObject4(), function (props) {
-  return props.theme.global.buttonSize;
+  return "".concat(props.theme.header.buttonSize, " !important");
 }, function (props) {
-  return props.theme.global.buttonSize;
+  return "".concat(props.theme.header.buttonSize, " !important");
 });
 
 var Label = _styledComponents["default"].div(_templateObject5()); // TODO use material-ui colors
@@ -168,6 +168,7 @@ var KeyPad = (0, _react.forwardRef)(function KeyPad(_ref, ref) {
   var displayRule = _ref.displayRule,
       position = _ref.position,
       validation = _ref.validation,
+      confirmOutside = _ref.confirmOutside,
       label = _ref.label,
       confirm = _ref.confirm,
       cancel = _ref.cancel,
@@ -213,7 +214,7 @@ var KeyPad = (0, _react.forwardRef)(function KeyPad(_ref, ref) {
   }
 
   (0, _useOnclickoutside["default"])(ref, function (e) {
-    if (validation(inputValue)) {
+    if (validation(inputValue) && confirmOutside) {
       confirm(inputValue);
     } else {
       cancel();
@@ -284,13 +285,15 @@ KeyPad.propTypes = {
   value: _propTypes["default"].oneOfType([_propTypes["default"].number, _propTypes["default"].string]),
   sync: _propTypes["default"].bool,
   update: _propTypes["default"].func.isRequired,
-  position: _propTypes["default"].string.isRequired
+  position: _propTypes["default"].string.isRequired,
+  confirmOutside: _propTypes["default"].bool
 };
 KeyPad.defaultProps = {
   label: undefined,
   value: '',
   sync: false,
-  cancel: function cancel() {}
+  cancel: function cancel() {},
+  confirmOutside: true
 };
 var _default = KeyPad;
 exports["default"] = _default;

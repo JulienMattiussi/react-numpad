@@ -13,7 +13,8 @@ var _default = {
     paddingTop: '2px',
     paddingBottom: '2px',
     paddingLeft: '4px',
-    paddingRight: '4px'
+    paddingRight: '4px',
+    buttonSize: '1em'
   },
   subHeader: {
     primaryColor: '#263238',
@@ -33,8 +34,7 @@ var _default = {
   },
   global: {
     fontFamily: 'Roboto, Helvetica Neue, Arial, sans-serif, Helvetica',
-    flexDirection: 'column',
-    buttonSize: '1em'
+    flexDirection: 'column'
   }
 };
 exports["default"] = _default;
