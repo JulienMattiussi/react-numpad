@@ -1,4 +1,10 @@
-export default {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+var _default = {
   header: {
     primaryColor: '#263238',
     secondaryColor: '#ECEFF1',
@@ -9,7 +15,7 @@ export default {
     paddingLeft: '4px',
     paddingRight: '4px',
     buttonSize: '1em',
-    order: 1,
+    order: 1
   },
   subHeader: {
     primaryColor: '#263238',
@@ -19,20 +25,21 @@ export default {
     paddingBottom: '5px',
     paddingLeft: '8px',
     paddingRight: '5px',
-    order: 2,
+    order: 2
   },
   body: {
     primaryColor: '#263238',
     secondaryColor: '#32a5f2',
     highlightColor: '#FFC107',
     backgroundColor: '#ECEFF1',
-    order: 3,
+    order: 3
   },
   panel: {
-    backgroundColor: '#CFD8DC',
+    backgroundColor: '#CFD8DC'
   },
   global: {
     fontFamily: 'Roboto, Helvetica Neue, Arial, sans-serif, Helvetica',
-    flexDirection: 'column',
-  },
+    flexDirection: 'column'
+  }
 };
+exports["default"] = _default;
